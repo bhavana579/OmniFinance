@@ -1,14 +1,5 @@
 /* Your web app's Firebase configuration */
-const firebaseConfig = {
-    apiKey: "AIzaSyBdJdzn16se7a4fdPMi5J--mnDlMLt0Skk",
-    authDomain: "omnifinace-login.firebaseapp.com",
-    databaseURL: "https://omnifinace-login-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "omnifinace-login",
-    storageBucket: "omnifinace-login.appspot.com",
-    messagingSenderId: "177727399839",
-    appId: "1:177727399839:web:2bc6703e1797bc1f187faa",
-    measurementId: "G-8D87K7BFHK"
-};
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Initialize variables
