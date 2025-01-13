@@ -1,0 +1,25 @@
+header {
+    background-color: rgb(186, 184,108); /* Set your desired background color */
+    padding: 0%;
+    z-index: 10;
+    opacity: 1; /* Ensure the header is fully opaque */
+}
+
+.nav {
+    padding: 0;
+}
+body {
+background-color: #f4e1cd
+}
+
+@media (max-width: 768px) {
+    /* Adjust the appearance of navbar topics for smaller screens */
+    .md\:opacity-100 {
+      opacity: 1 !important; /* Ensure high opacity */
+      background-color: rgba(239, 220, 128, 0.8) !important; /* Background color with higher opacity */
+      padding: 10px; /* Padding for better appearance */
+      border-radius: 5px; /* Optional: Add border radius for a rounded appearance */
+    }
+  }
+
+ 

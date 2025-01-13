@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Nunito:wght@400;900&family=Roboto:wght@400;900&display=swap");
+
+body {
+  background: linear-gradient(to right, #f4e1cd,#f4e1cd);
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: #fff;
+  width: 540px;
+  height: 600px;
+  margin: 5% auto;
+  position: relative;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+  display: flex;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.logo {
+  font-family: "Nunito Sans", sans-serif;
+  color: #dad836;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.leftbox {
+  width: 80px;
+  background: rgba(103, 114, 7, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+  padding-top: 10px;
+}
+
+nav a {
+  padding: 20px;
+  color: #fff;
+  font-size: 1.5em;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #b6ac3f;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+nav a.active {
+  color: #b6ac3f;
+}
+
+.rightbox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.profile {
+  width: 100%;
+}
+
+.profile h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #d3b47e;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.profile h2 {
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #dcf06e, rgba(229, 240, 107, 0.5)) 1 0%;
+  border-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  padding: 10px;
+  color: #070707;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.profile .btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  border: none;
+  color: #3fb6a8;
+  background: none;
+  cursor: pointer;
+}
+
+.profile .btn:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+footer {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: -20px;
+  text-align: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer p {
+  border: none;
+  padding: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #7d7d7d;
+}

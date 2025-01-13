@@ -1,0 +1,170 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(25deg, #f7f785, #ffeb3b, #e0be1a);
+    background-image: url('images/c5.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#content_container {
+    /*width: 30%;*/
+    height: 63%;
+    max-width: 750px;
+    /*margin-right: 50px; */ 
+    
+    
+}
+
+#form_container {
+    width: 100%;
+    height: 100%;
+
+    background-color: #dfd855;
+    box-shadow: 0 0 50px -20px #f4e1cd;
+    border-radius: 2%;
+
+    overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+    #form_container {
+        height: 30vh !important;
+    }
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #f4e1cd) 20;
+    background: #637c36;
+}
+
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+    background: -webkit-linear-gradient(25deg, #F4e1cd, #F4e1cd, #f4e1cd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #000) 1;
+}
+
+#button_container {
+    width: 100%;
+    height: 10%;
+
+    background-image: linear-gradient(80deg, #808000,#637c36 50%, #888815 50%, #637c36);
+    color: #fff;
+
+    float: left;
+
+    margin-top: 5px;
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add this CSS to your existing stylesheet or create a new one */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color:  rgb(186, 184,108);
+    border-radius: 12px;
+}
+
+.navbar-left img {
+    width: 80px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-right h2 {
+    font-family: 'Roboto', sans-serif; /* Apply the sleek font */
+    color: #fff;
+    font-size: 24px; /* Adjust font size as needed */
+    text-transform: uppercase;
+    margin: 0;
+}
