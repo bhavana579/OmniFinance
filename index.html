@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label, input {
+            font-size: 16px;
+        }
+        button {
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    <form method="post">
+        <label for="company">Enter company name:</label>
+        <input type="text" id="company" name="company" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+    {% if last_closing_price %}
+        <div class="result">
+            <h2>Results for {{ company }}</h2>
+            <p>Last Closing Price: {{ last_closing_price }}</p>
+            <p>Predicted Next Day Price: {{ predicted_next_day_price }}</p>
+            <img src="{{ img }}" alt="Prediction Graph">
+        </div>
+    {% endif %}
+</body>
+</html>

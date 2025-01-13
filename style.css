@@ -1,137 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+    margin:0;
+    padding:0;
     font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
 }
 body{
-    background: #e4e9f7;
+    background: #ffde32
+    ;
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
+.app{
+    background: #fff;
+    width: 90%;
+    max-width:600px;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding:30px;
 }
-.box{
-    background: #fdfdfd;
-    display: flex;
-    flex-direction: column;
-    padding: 25px 25px;
-    border-radius: 20px;
-    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
-                0 32px 64px -48px rgba(0,0,0,0.5);
-}
-.form-box{
-    width: 450px;
-    margin: 0px 10px;
-}
-.form-box header{
+.app h1{
     font-size: 25px;
+    color: #d75323;
     font-weight: 600;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
 }
-.form-box form .field{
-    display: flex;
-    margin-bottom: 10px;
-    flex-direction: column;
-
+.quiz{
+    padding: 20px 0;
 }
-.form-box form .input input{
-    height: 40px;
-    width: 100%;
-    font-size: 16px;
-    padding: 0 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
+.quiz h2{
+    font-size:18px;
+    color:rgb(15, 15, 15);
+    font-weight:600;
 }
 .btn{
-    height: 35px;
-    background: rgba(76,68,182,0.808);
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
-    transition: all .3s;
-    margin-top: 10px;
-    padding: 0px 10px;
+    background:#fff;
+    color:#222222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor:pointer;
+    transition:0.3s;
 }
 .btn:hover{
-    opacity: 0.82;
+    background:#222;
+    color:#fff;
 }
-.submit{
-    width: 100%;
+#next-btn{
+    background: #d04c00;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border:0;
+    padding:10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor:pointer;
+    display:none;
 }
-.links{
-    margin-bottom: 15px;
+.correct{
+    background: #9aeabc;
 }
-
-/********* Home *****************/
-
-.nav{
-    background: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    line-height: 60px;
-    z-index: 100;
-}
-.logo{
-    font-size: 25px;
-    font-weight: 900;
-    
-}
-.logo a{
-    text-decoration: none;
-    color: #000;
-}
-.right-links a{
-    padding: 0 10px;
-}
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-}
-.main-box{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-.main-box .top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.bottom{
-    width: 100%;
-    margin-top: 20px;
-}
-@media only screen and (max-width:840px){
-    .main-box .top{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .top .box{
-        margin: 10px 10px;
-    }
-    .bottom{
-        margin-top: 0;
-    }
-}
-.message{
-    text-align: center;
-    background: #f9eded;
-    padding: 15px 0px;
-    border:1px solid #699053;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    color: red;
+.incorrect{
+    background: #ff9393;
 }
